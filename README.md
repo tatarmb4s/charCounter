@@ -1,3 +1,11 @@
+# Basic Character counter
+Fork of the https://github.com/paribhandarkar/real-time-character-counter
+
+live at:
+https://ccount.t42.hu/
+
+All rights goes to the original author.
+
 # Real-time Character Counter
 
 For this project, I'm creating a text area with real-time character count and limit functionality using JavaScript. I want to provide a user-friendly experience for anyone filling out a form or input field by letting them know how many characters they have remaining as they type, and preventing them from typing any more characters once they've reached the limit.
