@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 body{
     margin: 0;
@@ -9,41 +9,113 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #fbf2d2;
-    font-family: 'Gloock', serif;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    font-family: 'Inter', sans-serif;
 }
 
 .container{
-    background-color: #fcdda3;
-    width: 400px;
-    padding: 10px 2%;
-    margin: 5px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 600px;
+    padding: 30px 40px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.limit-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+}
+
+.limit-container label {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.limit-container input {
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 10px;
-    border: 1px solid black;
-    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    font-family: 'Gloock', serif;
+    font-size: 16px;
+    width: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    text-align: center;
+}
+
+.limit-container input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 textarea{
-    resize: none;
+    resize: both;
     width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid black;
-    font-family: serif;
-    font-size: 18px;
+    height: 150px;
+    min-height: 100px;
+    min-width: 200px;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     box-sizing: border-box;
-    background-color: #f1f1f2;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 .counter-container{
     display: flex;
     justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.counter-container p {
+    margin: 10px 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .total-container {
-    color: green;
+    color: #4ade80;
+    text-shadow: 0 0 10px rgba(74, 222, 128, 0.5);
 }
 
 .remaining-container{
-    color: red;
+    color: #f87171;
+    text-shadow: 0 0 10px rgba(248, 113, 113, 0.5);
 }
